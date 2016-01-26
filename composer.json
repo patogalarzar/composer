@@ -1,0 +1,22 @@
+{
+	"name":"web/composer",
+	"description":"ejemplo uso composer",
+	"type":"project",
+	"authors":[
+		{
+			"name":"Patricio Galarza",
+			"email":"patricio.galarza.r@gmail.com",
+			"homepage":"http://github.com/patogalarzar",
+			"role":"admin"
+		}
+	],
+	"require":{
+		"php":">=5.3.0",
+		"dompdf/dompdf": "dev-master"
+	},
+	"autoload":{
+		"psr-4":{
+
+		}
+	}
+}
