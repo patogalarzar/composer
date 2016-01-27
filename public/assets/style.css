@@ -1,6 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
 body {
 	/* Ubicacion de la imagen */
-	background-image: url(assets/imgs/working.jpg);
+	background-image: url(imgs/working.jpg);
 	/* Nos aseguramos que la imagen de fondo este centrada vertical y
     horizontalmente en todo momento */
 	background-position: center center;
@@ -19,9 +20,37 @@ body {
 	/* Fijamos un color de fondo para que se muestre mientras se está
 	cargando la imagen de fondo o si hay problemas para cargarla  */
 	background-color: #464646;
+
+	/* ---------------------------------------------------------- */
+	font-size: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+h1{
+	font-size: 36px;
+	text-align: center;
+	margin: 0, auto;
+}
+.boton {
+	background: transparent;
+	background-color: #f1c40f;
+	border: 0;
+	border: 2px solid #fef9e7;
+	border-radius: 4px;
+	color: #fef9e7;
+	cursor: pointer;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 20px;
+	margin: 0 8px;
+	padding: 6px 14px;
+	text-align: center;
+	vertical-align: middle;
+	transition: all 0.5s;
 }
 @media only screen and (max-width: 767px) {
   body {
-    background-image: url(assets/imgs/aceleradora.jpg);
+    background-image: url(imgs/aceleradora.jpg);
   }
 }
