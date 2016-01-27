@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<LINK REL=StyleSheet HREF="assets/style.css" TYPE="text/css" MEDIA=screen>
 	<head>
 		<title>Certificate generator</title>
+		<LINK REL=StyleSheet HREF="assets/style.css" TYPE="text/css" MEDIA=screen>
 	</head>
 	<body>
 		<div>

@@ -3,6 +3,9 @@
 // see: http://getcomposer.org/doc/00-intro.md
 require '../vendor/autoload.php';
 
+// disable DOMPDF's internal autoloader if you are using composer
+define('DOMPDF_ENABLE_AUTOLOAD', false);
+
 // reference the Dompdf namespace
 use Dompdf\Dompdf;
 
@@ -23,5 +26,7 @@ $dompdf->render();
 // Get the generated PDF file contents
 $pdf = $dompdf->output();
 
+$dompdf->set_base_path("../templates/css/style.css");
+
 // Output the generated PDF to Browser
-$dompdf->stream();
+$dompdf->stream('certificate');
