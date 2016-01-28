@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Certificate generator</title>
-		<LINK REL=StyleSheet HREF="assets/style.css" TYPE="text/css" MEDIA=screen>
+		<link rel=StyleSheet href="assets/style.css" type="text/css" MEDIA=screen>
 	</head>
 	<body>
 		<div>

@@ -5,7 +5,7 @@
 	class Template
 	{
 		
-		public static function render($file, array $data = array();)
+		public static function render($file, array $data = array())
 		{
 			ob_start();
 			extract($data);
