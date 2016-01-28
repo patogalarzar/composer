@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title>Certificate</title>
-		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../public/assets/certificate.css">
 	</head>
 	<body>
 		<div>

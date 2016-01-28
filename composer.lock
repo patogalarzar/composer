@@ -4,12 +4,12 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c1b45f99e55034b68b9333dde72d6459",
-    "content-hash": "796135416a11021061c7f1dc06546bbb",
+    "hash": "29fddae2214b77aa1aac5ae98d4ff4c8",
+    "content-hash": "b94fa8fb9eaf13e96148fd546a31dd27",
     "packages": [
         {
             "name": "dompdf/dompdf",
-            "version": "dev-master",
+            "version": "v0.7.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dompdf/dompdf.git",
@@ -141,12 +141,12 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "dompdf/dompdf": 20
+        "dompdf/dompdf": 10
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.3.0"
+        "php": ">=5.4.0"
     },
     "platform-dev": []
 }

@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@page {margin: 0px;}
 body {
 	/* Ubicacion de la imagen */
-	/*background-image: url(../../public/assets/imgs/certificate.jpg);*/
+	background-image: url(../../public/assets/imgs/certificate.jpg);
 	/* Nos aseguramos que la imagen de fondo este centrada vertical y
     horizontalmente en todo momento */
 	background-position: center center;
@@ -15,17 +16,17 @@ body {
 
 	/* La imagen de fondo se reescala cuando se cambia el ancho de ventana
 	 del navegador */
-	background-size: cover;
+	background-size: 100%;
 
 	/* Fijamos un color de fondo para que se muestre mientras se está
 	cargando la imagen de fondo o si hay problemas para cargarla  */
 	background-color: #464646;
 
 	/* ---------------------------------------------------------- */
-	display: flex;
-    min-height: 100vh;
+	/*display: flex;*/
+    /*min-height: 100vh;*/
     margin: 0;
-    font-family: 'Raleway';
+    font-family: 'Raleway',Helvetica;
     text-align: center;
 }
 div {

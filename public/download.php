@@ -1,32 +1,19 @@
 <?php 
-// somewhere early in your project's loading, require the Composer autoloader
-// see: http://getcomposer.org/doc/00-intro.md
-require '../vendor/autoload.php';
-
-// disable DOMPDF's internal autoloader if you are using composer
-define('DOMPDF_ENABLE_AUTOLOAD', false);
-
-// reference the Dompdf namespace
-use Dompdf\Dompdf;
+// Composer's auto-loading functionality
+require "../vendor/autoload.php";
 
 ob_start();
-include "../templates/pdf/certificate.php";
+require_once('../templates/pdf/certificate.php');
 $html = ob_get_clean();
 
-// instantiate and use the dompdf class
-$dompdf = new Dompdf();
-$dompdf->loadHtml($html);
+// var_dump($html);
+// exit();
+use Dompdf\Dompdf;
 
-// (Optional) Setup the paper size and orientation
-$dompdf->setPaper('A4', 'landscape');
-
-// Render the HTML as PDF
+//generate some PDFs!
+$dompdf = new DOMPDF();  //if you use namespaces you may use new \DOMPDF()
+$dompdf->load_html($html);
+$dompdf->setPaper('A5', 'landscape');
 $dompdf->render();
-
-// Get the generated PDF file contents
-$pdf = $dompdf->output();
-
-$dompdf->set_base_path("../templates/css/style.css");
-
-// Output the generated PDF to Browser
-$dompdf->stream('certificate');
+$dompdf->stream("certificate.pdf", array("Attachment"=>0));
+?>

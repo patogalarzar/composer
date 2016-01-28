@@ -73,8 +73,8 @@
     },
     {
         "name": "dompdf/dompdf",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
+        "version": "v0.7.0-beta3",
+        "version_normalized": "0.7.0.0-beta3",
         "source": {
             "type": "git",
             "url": "https://github.com/dompdf/dompdf.git",
