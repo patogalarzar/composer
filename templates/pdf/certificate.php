@@ -2,12 +2,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Certificate</title>
-		<link rel="stylesheet" type="text/css" href="../public/assets/certificate.css">
+		<link rel="stylesheet" type="text/css" href="../../public/assets/certificate.css">
 	</head>
 	<body>
 		<div>
-			<h1>Patricio Galarza</h1>
-			<p>Composer & DOMPDF</p>
+			<p>Certifies:</p>
+			<h1><?= $name ?></h1>
+			<p><?= $course ?></p>
 		</div>
 	</body>
 </html>

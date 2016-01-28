@@ -2,11 +2,13 @@
 // Composer's auto-loading functionality
 require "../vendor/autoload.php";
 
-ob_start();
-require_once('../templates/pdf/certificate.php');
-$html = ob_get_clean();
+$data = array(	"name" => "Juan Carlos Idrovo Cardenas",
+				"course" => "Composer & DOMPDF"
+			);
 
-// var_dump($html);
+$html =Template::render('pdf/certificate',$data);
+
+// die($html);
 // exit();
 use Dompdf\Dompdf;
 
