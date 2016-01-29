@@ -1,9 +1,14 @@
 <?php 
-	class Pdf {
-		
+	/**
+	* 
+	*/
+	require "../vendor/autoload.php";
+	use Dompdf\Dompdf;
+	class Pdf 
+	{
 		public static function render($file, $html)
 		{
-			use Dompdf\Dompdf;
+			
 			//generate some PDFs!
 			$dompdf = new DOMPDF();  //if you use namespaces you may use new \DOMPDF()
 			$dompdf->load_html($html);
