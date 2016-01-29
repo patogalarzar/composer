@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Dompdf\\' => array($vendorDir . '/dompdf/dompdf/src'),
+    'App\\' => array($baseDir . '/Certificate'),
 );
