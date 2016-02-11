@@ -1,4 +1,6 @@
-<?php 
+<?php
+ 
+date_default_timezone_set('America/Guayaquil');
 // Composer's auto-loading functionality
 require "../vendor/autoload.php";
 
